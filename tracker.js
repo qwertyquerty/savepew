@@ -25,7 +25,7 @@ var difference_chart = new Chart(difference_chart_canvas.getContext('2d'),differ
 setInterval(function(){
   $.getJSON(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${PEWDIEPIEID}=&key=${APIKEY}`, function(data) {
     pewdiepie_subs = parseInt(data.items[0].statistics.subscriberCount)
-    
+
     $("#pewdiepie_subs").html(pewdiepie_subs)
 
     pewdiepie_chart_config.data.labels.push(new Date().format('m-d-Y h:i:s'));
@@ -48,10 +48,11 @@ setInterval(function(){
 
   difference_subs = pewdiepie_subs - tseries_subs
 
-  if (pewdiepie_subs) {
+  if (difference_subs) {
     difference_chart_config.data.labels.push(new Date().format('m-d-Y h:i:s'));
     difference_chart_config.data.datasets[0].data.push(difference_subs);
     difference_chart.update();
+    document.title = difference_subs+" SUBS AWAY!!"
   }
 
-},2000)
+},2500)
