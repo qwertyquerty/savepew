@@ -1,4 +1,4 @@
-const APIKEY = "AIzaSyDQvj6bpvo8C3k3rtzy0NMn3_fPGZfOZOE"
+const APIKEY = "AIzaSyDRKbjfv2TB3J2CXsuGPgXtr6Nu_c6EbuE"
 const TSERIESID = "UCq-Fj5jknLsUf-MWSy4_brA"
 const PEWDIEPIEID = "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
 
@@ -55,4 +55,4 @@ setInterval(function(){
     document.title = difference_subs+" SUBS AWAY!!"
   }
 
-},2000)
+},2500)
