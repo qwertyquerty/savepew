@@ -55,4 +55,4 @@ setInterval(function(){
     document.title = difference_subs+" SUBS AWAY!!"
   }
 
-},2500)
+},1500)
