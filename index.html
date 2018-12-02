@@ -1,0 +1,57 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdn.rawgit.com/JDMcKinstry/JavaScriptDateFormat/master/Date.format.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+
+
+
+<link rel="stylesheet" href="tracker.css"/>
+
+<script>
+window.odometerOptions = {
+  duration: 1000,
+};
+</script>
+
+<div class="header">
+  <a href="https://www.youtube.com/user/PewDiePie"><div class="channel-name">PewDiePie</div></a>
+  <br>
+  <div class="channel-subcount">vs</div>
+  <br>
+  <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA/"><div class="channel-name">T-Series</div></a>
+</div>
+
+<div class="channel pewdiepie">
+  <a href="https://www.youtube.com/user/PewDiePie"><div class="channel-name">PewDiePie</div></a>
+  <img src="https://yt3.ggpht.com/a-/AN66SAztY6oYWZnS1Cae9o4_msEE1H83Tld5cFtl3Q=s288-mo-c-c0xffffffff-rj-k-no" class="channel-avatar"></img>
+  <div id="pewdiepie_subs" class="channel-subcount odometer"></div>
+</div>
+
+
+<div class="channel tseries">
+  <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA/"><div class="channel-name">T-Series</div></a>
+  <img src="https://yt3.ggpht.com/a-/AN66SAxPfKnfHAnAs0rOqaSwINOxDYJsyj-gPBP0OQ=s288-mo-c-c0xffffffff-rj-k-no" class="channel-avatar"></img>
+  <div id="tseries_subs" class="channel-subcount odometer"></div>
+</div>
+
+<div class="difference">
+  <div class="channel-name">Difference</div>
+  <div id="difference_subs" class="channel-subcount odometer"></div>
+</div>
+
+
+<div class="pewdiepie-chart chart-container">
+  <canvas id="pewdiepie_chart"></canvas>
+</div>
+
+<div class="difference-chart chart-container">
+  <canvas id="difference_chart"></canvas>
+</div>
+
+<div class="tseries-chart chart-container">
+  <canvas id="tseries_chart"></canvas>
+</div>
+
+
+<script src="tracker.js"></script>
