@@ -9,15 +9,15 @@ var data = [];
 
 
 var pewdiepie_chart_canvas = document.getElementById('pewdiepie_chart');
-var pewdiepie_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "PewDiePie",borderColor: "rgba(0,0,220,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false,}}
+var pewdiepie_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "PewDiePie",borderColor: "rgba(0,0,220,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false, elements: { point: { radius: 0 } } }}
 var pewdiepie_chart = new Chart(pewdiepie_chart_canvas.getContext('2d'),pewdiepie_chart_config)
 
 var tseries_chart_canvas = document.getElementById('tseries_chart');
-var tseries_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "T-Series",borderColor: "rgba(220,0,0,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false,}}
+var tseries_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "T-Series",borderColor: "rgba(220,0,0,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false, elements: { point: { radius: 0 } } }}
 var tseries_chart = new Chart(tseries_chart_canvas.getContext('2d'),tseries_chart_config)
 
 var difference_chart_canvas = document.getElementById('difference_chart');
-var difference_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "Difference",borderColor: "rgba(0,0,0,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false,}}
+var difference_chart_config = {type:"line",data: {labels: [],datasets: [{fill: false,label: "Difference",borderColor: "rgba(0,0,0,0.8)",data: []}]},options:{scales:{xAxes: [{display: false}]},responsive:true,maintainAspectRatio: false, elements: { point: { radius: 0 } } }}
 var difference_chart = new Chart(difference_chart_canvas.getContext('2d'),difference_chart_config)
 
 
