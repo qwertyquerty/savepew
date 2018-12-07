@@ -1,0 +1,65 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdn.rawgit.com/JDMcKinstry/JavaScriptDateFormat/master/Date.format.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130163522-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130163522-1');
+</script>
+
+
+<link rel="stylesheet" href="rewindtracker.css"/>
+
+<title>SUBSCRIBE TO PEWDIEPIE!!</title>
+
+<script>
+window.odometerOptions = {
+  duration: 1000,
+};
+</script>
+
+<div class="header">
+  <a href="https://www.youtube.com/user/PewDiePie"><div class="section-name">Rewind 2018<br>Likes vs Dislikes</div></a>
+</div>
+
+<div class="section likes">
+  <a href="https://www.youtube.com/user/PewDiePie"><div class="section-name">Likes</div></a>
+  <div id="likes" class="section-count odometer"></div>
+</div>
+
+
+<div class="section dislikes">
+  <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA/"><div class="section-name">Dislikes</div></a>
+  <div id="dislikes" class="section-count odometer"></div>
+</div>
+
+<div class="difference">
+  <div class="section-name">Difference</div>
+  <div id="difference_likes" class="section-count odometer"></div>
+</div>
+
+
+<div class="likes-chart chart-container">
+  <canvas id="likes_chart"></canvas>
+</div>
+
+<div class="difference-chart chart-container">
+  <canvas id="difference_chart"></canvas>
+</div>
+
+<div class="dislikes-chart chart-container">
+  <canvas id="dislikes_chart"></canvas>
+</div>
+
+<div class="footer">Made with <3 by <a href="https://github.com/qwertyquerty">qwerty</a>! | <a href="https://discord.gg/JF3kg77">Discord</a> | <a href="https://www.patreon.com/qwertyquerty">Patreon</a></div>
+
+<script src="rewindtracker.js"></script>

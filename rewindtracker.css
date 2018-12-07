@@ -1,0 +1,114 @@
+* {
+  font-family: Arial;
+}
+
+a {
+  color: #000;
+}
+
+a:hover{
+  color: #555;
+}
+
+
+
+.header {
+  font-size: calc((1vh + 2vw) / 2);
+  border: solid 0.3vw #000000;
+  max-width: 29vw;
+  width: 29vw;
+  padding: 1vh;
+  position: absolute;
+  text-align: center;
+  left: 0px; right: 0px;
+  margin-left:auto; margin-right:auto;
+  top: 4vh;
+  height: 17vh;
+}
+
+.section {
+  border: solid 0.3vw #000000;
+  width: 29vw;
+  max-width: 29vw;
+  max-height: 55vh;
+  height: 17vh;
+  padding: 1vh;
+  position: absolute;
+  text-align: center;
+  display: table;
+  align-items: center;
+}
+
+.section-count {
+  font-size: calc((6vh + 4vw) / 2);
+  text-align: center;
+  width: 100%;
+}
+
+
+.section-name {
+  font-size: calc((4vh + 5vw) / 2);
+}
+
+.dislikes {
+  left: 4vh;
+  top: 4vh;
+}
+
+.likes {
+  right: 4vh;
+  top: 4vh;
+}
+
+.difference {
+  border: solid 0.3vw #000000;
+  max-width: 29vw;
+  width: 29vw;
+  padding: 1vh;
+  position: absolute;
+  text-align: center;
+  left: 0px; right: 0px;
+  margin-left:auto; margin-right:auto;
+  top: 28vh;
+  height: 19vh;
+}
+
+.chart-container {
+  position: absolute;
+  width: 29vw;
+  padding: 1vh;
+  height: 30vh;
+  border: solid 0.3vw #000000;
+}
+
+.difference-chart {
+  bottom: 4vh;
+  left: 0px; right: 0px;
+  margin-left:auto; margin-right:auto;
+  width: 94.5vw;
+  height: 38.5vh;
+}
+
+.likes-chart {
+  left: 4vh;
+  bottom: 4vh;
+  height: 19vh;
+  top: 28vh;
+  padding: 1vh;
+}
+.dislikes-chart {
+  right: 4vh;
+  top: 28vh;
+  padding: 1vh;
+  height: 19vh;
+}
+
+.footer {
+  color: #888;
+  font-size: 14px;
+  width: 99%;
+  position: absolute;
+  bottom: 1vh;
+  text-align:center;
+  display: inline;
+}
