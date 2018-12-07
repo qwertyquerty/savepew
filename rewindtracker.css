@@ -50,12 +50,12 @@ a:hover{
   font-size: calc((4vh + 5vw) / 2);
 }
 
-.dislikes {
+.likes {
   left: 4vh;
   top: 4vh;
 }
 
-.likes {
+.dislikes {
   right: 4vh;
   top: 4vh;
 }
