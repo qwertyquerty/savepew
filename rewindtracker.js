@@ -53,4 +53,4 @@ function update() {
   }
 }
 update()
-setInterval(update,3000)
+setInterval(update,4000)
